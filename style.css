@@ -28,7 +28,7 @@ h1{
     width: 18vmin;
     border: none;
     border-radius: 5%;
-    box-shadow:0 0 1rem rgb(250, 225, 223, 0.25);
+    box-shadow:0 0 1rem rgb(250, 225, 223, 0.5);
     font-size: 15vmin;
     text-align: center;
     
