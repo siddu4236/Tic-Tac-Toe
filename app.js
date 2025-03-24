@@ -17,6 +17,7 @@ const wins = [
 ];
 
 const resetGame = () => {
+    resetbtn.innerText = 'Reset Game';
     turno = true;
     enableBoxes();
     congrat.style.display = "none";
@@ -57,6 +58,7 @@ const showWins = (winner) => {
     msg.innerText = `Winner "${winner}"`;
     msg.style.display = "block";
     congrat.style.display = "block";
+    resetbtn.innerText = 'New Game';
 };
 
 const showDraw = (winner) => {
@@ -64,6 +66,7 @@ const showDraw = (winner) => {
     msg.style.display = "block";
     drawn.style.display = "block";
     congrat.style.display = "none";
+    resetbtn.innerText = 'New Game';
 };
 
 const checkWins = () => {

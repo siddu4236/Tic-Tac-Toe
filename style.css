@@ -10,7 +10,7 @@ body{
     font-size: 9vmin;
     font-family: cursive;
     margin-top: 5vh;
-    text-shadow: 0 0 1rem rgb(250, 225, 223, 2);
+    text-shadow: 0 0 1rem rgb(250, 225, 223, 0.2);
 }
 
 .container{
@@ -35,7 +35,7 @@ body{
     width: 18vmin;
     border: none;
     border-radius: 5%;
-    box-shadow:0 0 1rem rgb(250, 225, 223, 0.5);
+    box-shadow:0 0 1rem rgb(250, 225, 223, 0.3);
     font-size: 13vmin;
     text-align: center;
     color: #28024e;
