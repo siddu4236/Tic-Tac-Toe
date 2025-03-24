@@ -1,5 +1,5 @@
 body{
-    background-color: #1C0221;
+    background-color: #170229;
     text-align: center;
     background-image: url(bg2.png);
     
@@ -93,3 +93,32 @@ body{
     text-shadow:0 0 1rem rgba(213, 29, 16, 2) ;
     display: none;
 }
+
+
+.scoreboard {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    color: #FAE1DF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreboard p{
+    margin: 2vmin;
+    display: flex;
+    padding-left: 2vmin;
+    text-align: left;
+    width: 20vmin;
+    border: 1px solid ;
+    margin: none;
+    
+}
+/*
+.scoreboard p span{
+    padding-left: 5vh;
+    text-align: right;
+}
+*/
