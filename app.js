@@ -87,6 +87,12 @@ const checkWins = () => {
     }
 }
 
+document.body.insertAdjacentHTML("beforeend", `
+    <div class="scoreboard">
+        <p>Player O Wins: <span id="playerOScore">0</span></p>
+        <p>Player X Wins: <span id="playerXScore">0</span></p>
+    </div>
+`);
 
 
 resetbtn.addEventListener("click", resetGame)

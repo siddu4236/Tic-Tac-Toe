@@ -9,6 +9,7 @@ body{
     color: #FAE1DF;
     margin: 0;
     font-size: 9vmin;
+    font-family: cursive;
     margin-top: 5vh;
     text-shadow: 0 0 1rem rgb(250, 225, 223, 2);
 }
@@ -41,17 +42,20 @@ body{
     color: #28024e;
     font-family: cursive;
 }
-#reset{
+#reset {
     position: relative;
     z-index: 9999;
-    padding: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 4vmin;
+    font-family: cursive;
     background-color: #28024e;
     border: none;
     color: #FAE1DF;
-    border-radius: 0.5rem;
-    box-shadow:0 0 1rem rgba(213, 29, 16, 0.25) 
+    border-radius: 2vmin;
+    box-shadow: 0 0 1rem rgba(213, 29, 16, 0.25);
+    width: 28vmin; 
+    height: 9vmin; 
 }
+
 #congrat{
     float: center;
     top: -2vh;
@@ -81,7 +85,6 @@ body{
 
 .msg{
     color: #FAE1DF;
-    
     top: 44vh;
     text-align: center;
     position: absolute;
