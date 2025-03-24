@@ -1,5 +1,5 @@
 let boxes= document.querySelectorAll(".box");
-let restbtn = document.querySelector(".reset");
+let resetbtn = document.querySelector(".reset");
 let turno='true';
 
 const wins=[
@@ -13,6 +13,23 @@ const wins=[
     [6, 7, 8],
 ];
 
+const resetGame = () => {
+    turno='true';
+    enableBoxes();
+}
+const disableBoxes= () =>{
+    for(let box of boxes){
+        box.disabled=true;
+    }
+}
+
+const enableBoxes= () =>{
+    for(let box of boxes){
+        box.disabled = false;
+        box.innerText = "";
+    }
+}
+
 boxes.forEach((box)=>{
     box.addEventListener("click",() =>{
         if(turno) {
@@ -23,8 +40,8 @@ boxes.forEach((box)=>{
             turno = true;
         }
         box.disabled=true;
-
-        checkWins();
+        checkWins()
+        
     });
 });
 const checkWins = () => {
@@ -36,8 +53,10 @@ const checkWins = () => {
         if(pos1val != "" && pos2val != "" && pos3val != ""){
             if(pos1val == pos2val && pos2val == pos3val ){
                 console.log("Winner");
+                disableBoxes();
             }
         }
     }
 } 
-resetbtn()
+
+resetbtn.addEventListener("click" , resetGame)
