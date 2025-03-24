@@ -1,11 +1,18 @@
+
 body{
     background-color: #1C0221;
     text-align: center;
+    background-image: url(bg2.png);
+    
 }
-h1{
+.h1 {
     color: #FAE1DF;
     margin: 0;
+    font-size: 9vmin;
+    margin-top: 5vh;
+    text-shadow: 0 0 1rem rgb(250, 225, 223, 2);
 }
+
 .container{
     height: 70vh;
     display: flex;
@@ -29,16 +36,58 @@ h1{
     border: none;
     border-radius: 5%;
     box-shadow:0 0 1rem rgb(250, 225, 223, 0.5);
-    font-size: 15vmin;
+    font-size: 13vmin;
     text-align: center;
-    
+    color: #28024e;
+    font-family: cursive;
 }
 #reset{
+    position: relative;
+    z-index: 9999;
     padding: 0.5rem;
     font-size: 1.25rem;
     background-color: #28024e;
     border: none;
     color: #FAE1DF;
     border-radius: 0.5rem;
-    box-shadow:0 0 1rem rgba(213, 29, 16, 0.25);
+    box-shadow:0 0 1rem rgba(213, 29, 16, 0.25) 
+}
+#congrat{
+    float: center;
+    top: -2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+#ani{
+    
+}
+
+#drawn{
+    float: center;
+    top: -2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.msg{
+    color: #FAE1DF;
+    
+    top: 44vh;
+    text-align: center;
+    position: absolute;
+    font-family: cursive;
+    font-size: 8vmin;
+    width: 100%;
+    text-shadow:0 0 1rem rgba(213, 29, 16, 2) ;
+    display: none;
 }
